@@ -1,0 +1,27 @@
+\documentclass[uplatex]{jsarticle}
+
+\begin{document}
+
+\title{Docker + \pLaTeX のテスト}
+\author{tamura shingo}
+
+\maketitle
+
+\section{テステス}
+
+これはテストです。
+
+
+DockerでらくらくLaTeX環境構築\footnote{https://qiita.com/Shitimi\_613/items/9706d57fb7bc17cbed0e}
+を参照。
+
+
+\begin{verbatim}
+docker run --rm -v $PWD:/workdir paperist/alpine-texlive-ja uplatex test.tex
+docker run --rm -v $PWD:/workdir paperist/alpine-texlive-ja dvipdfmx test.dvi
+\end{verbatim}
+
+
+\end{document}
+
+
