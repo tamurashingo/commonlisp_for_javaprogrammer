@@ -1,7 +1,7 @@
 PREDEF:
 
 CHAPS:
-  - commonlisp_for_javaprogrammer.re
+  - src/install.re
 
 APPENDIX:
 
