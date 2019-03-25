@@ -130,7 +130,7 @@ $ @<b>{ros use sbcl/1.5.0}
 
 SBCLはDownloadページにビルド済みのバイナリファイルへのリンクがある。
 このファイルを好きなところに展開し、
-その中にある@<tt>{run-sbch.sh}を実行すればよい。
+その中にある@<tt>{run-sbch.sh}を実行すればSBCLが起動する。
 
 //cmd{
 $ @<b>{tar xvjf sbcl-1.5.0-x86-64-linux-binary.tar.bz2}
@@ -150,7 +150,12 @@ distribution for more information.
   @<b>{ (+ x y))}
 5
 * @<b>{(quit)}
+$
 //}
+
+//image[download_sbcl][Steel Bank Common LispのWebサイト]{
+//}
+
 
 @<tt>{install.sh}を実行してのインストールも可能である。
 
@@ -175,8 +180,32 @@ distribution for more information.
 
 === Clozure CL
 
+CCLもDownloadページにビルド済みのバイナリファイルへのリンクがある。
+そのファイルを展開するだけでインストールは完了である。
+
+その中にある@<tt>{lx86cl64}を実行すればCCLが起動する。
+
+//cmd{
+$ @<b>{tar xvzf ccl-1.11.5-linuxx86.tar.gz}
+ccl/
+...
+ccl/compiler/subprims.lisp
+$ @<b>{ccl/lx86cl64}
+Clozure Common Lisp Version 1.11.5/v1.11.5  (LinuxX8664)
+
+For more information about CCL, please see http://ccl.clozure.com.
+
+CCL is free software.  It is distributed under the terms of the Apache
+Licence, Version 2.0.
+? @<b>{(let ((x 2)}
+  @<b>{      (y 3))}
+  @<b>{  (+ x y))}
+5
+? @<b>{(quit)}
+$
+//}
+
+//image[download_ccl][Clozure CLのWebサイト]{
+//}
 
 
-
-
-= [column] Steel Bank Common Lispのビルド
